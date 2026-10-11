@@ -1,0 +1,243 @@
+{
+  "id": "umbrella",
+  "name": "Diego Alves",
+  "role": "Support manager, Umbrella",
+  "avatar": "DA",
+  "story": "Team plan, 40 seats, SSO on. API errors doubled, tickets piling up and NPS is dropping.",
+  "ctx": {
+    "workspaceId": "ws_umbrella",
+    "plan": "team",
+    "seats": 40,
+    "hasSso": true
+  },
+  "areas": {
+    "reliability": {
+      "anomaly": 2.4,
+      "visits": 8,
+      "tickets": 7
+    },
+    "support": {
+      "anomaly": 2,
+      "visits": 12,
+      "tickets": 9
+    },
+    "feedback": {
+      "anomaly": 1.8,
+      "visits": 4,
+      "tickets": 2
+    },
+    "usage": {
+      "anomaly": 1.1,
+      "visits": 2,
+      "tickets": 0
+    },
+    "billing": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "security": {
+      "anomaly": 1,
+      "visits": 1,
+      "tickets": 0
+    },
+    "onboarding": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    }
+  },
+  "topics": [
+    "API returns 502 on /v2/export",
+    "Webhooks delayed by minutes",
+    "Dashboard won't load for some users",
+    "Slow search since Tuesday"
+  ],
+  "w": {
+    "active-users": {
+      "value": 33,
+      "deltaPct": -6,
+      "series": [
+        36,
+        36,
+        35,
+        35,
+        34,
+        33,
+        33
+      ]
+    },
+    "seats-used": {
+      "used": 38,
+      "total": 40
+    },
+    "open-tickets": {
+      "value": 17,
+      "deltaPct": 70
+    },
+    "uptime": {
+      "value": 99.71,
+      "incidents": 3
+    },
+    "usage-trend": {
+      "deltaPct": -5,
+      "series": [
+        120,
+        123.5,
+        112.3,
+        120.6,
+        117.6,
+        110.3,
+        119.9,
+        111.4,
+        110.2,
+        117.1,
+        106.1,
+        110.8,
+        112.3,
+        102.6
+      ]
+    },
+    "feature-adoption": {
+      "items": [
+        {
+          "label": "Dashboards",
+          "value": 80
+        },
+        {
+          "label": "Alerts",
+          "value": 62
+        },
+        {
+          "label": "API",
+          "value": 71
+        },
+        {
+          "label": "Exports",
+          "value": 40
+        }
+      ]
+    },
+    "billing": {
+      "plan": "Team",
+      "mrr": 2100,
+      "status": "paid",
+      "invoices": [
+        {
+          "label": "#3310 \u00b7 Sep",
+          "amount": 2100,
+          "status": "paid"
+        }
+      ]
+    },
+    "seat-growth": {
+      "added30d": 1,
+      "series": [
+        36,
+        37,
+        37,
+        38,
+        38,
+        38
+      ]
+    },
+    "security-events": {
+      "total": 12,
+      "items": [
+        {
+          "label": "Failed logins (24h)",
+          "value": 9
+        },
+        {
+          "label": "New devices",
+          "value": 3
+        }
+      ]
+    },
+    "api-errors": {
+      "ratePct": 4.8,
+      "series": [
+        1.9,
+        2.3,
+        2.2,
+        2.8,
+        3,
+        3,
+        3.7,
+        3.6,
+        3.9,
+        4.6,
+        4.2,
+        4.9
+      ]
+    },
+    "response-time": {
+      "p95Ms": 1240,
+      "series": [
+        300,
+        402.7,
+        442.8,
+        575.7,
+        650.4,
+        689.1,
+        858.7,
+        877.6,
+        958,
+        1130.7,
+        1095.9,
+        1252.4
+      ]
+    },
+    "ticket-backlog": {
+      "oldestDays": 5,
+      "items": [
+        {
+          "label": "High",
+          "value": 6
+        },
+        {
+          "label": "Normal",
+          "value": 8
+        },
+        {
+          "label": "Low",
+          "value": 3
+        }
+      ]
+    },
+    "nps-score": {
+      "value": 18,
+      "deltaPts": -14,
+      "promoters": 9,
+      "detractors": 12
+    },
+    "onboarding-progress": {
+      "done": 6,
+      "total": 6,
+      "steps": []
+    },
+    "alert-churn-risk": {
+      "detail": "Tickets up 70%, NPS down 14 points in two weeks."
+    },
+    "alert-security-breach": {
+      "detail": "No signs of unusual access."
+    },
+    "alert-payment-failed": {
+      "detail": "All invoices paid."
+    },
+    "suggest-upgrade": {
+      "detail": "Enterprise includes a dedicated support channel."
+    },
+    "suggest-enable-sso": {
+      "detail": "SSO is already enabled."
+    },
+    "suggest-invite-team": {
+      "detail": "Not needed: onboarding complete."
+    }
+  },
+  "events": [
+    "API 5xx rate rose from 1.9% to 4.8% in 12 hours",
+    "p95 latency is 1240 ms, about 4x normal",
+    "Open tickets are up 70% and NPS fell 14 points in two weeks"
+  ]
+}

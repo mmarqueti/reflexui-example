@@ -1,0 +1,243 @@
+{
+  "id": "globex",
+  "name": "Bruno Lima",
+  "role": "Finance lead, Globex Growth",
+  "avatar": "BL",
+  "story": "Team plan, 25 seats growing fast. An invoice failed 6 days ago and billing keeps coming up.",
+  "ctx": {
+    "workspaceId": "ws_globex",
+    "plan": "team",
+    "seats": 25,
+    "hasSso": false
+  },
+  "areas": {
+    "billing": {
+      "anomaly": 2.6,
+      "visits": 11,
+      "tickets": 3
+    },
+    "usage": {
+      "anomaly": 1.2,
+      "visits": 4,
+      "tickets": 0
+    },
+    "onboarding": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "security": {
+      "anomaly": 1.1,
+      "visits": 1,
+      "tickets": 0
+    },
+    "reliability": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "support": {
+      "anomaly": 1.3,
+      "visits": 2,
+      "tickets": 3
+    },
+    "feedback": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    }
+  },
+  "topics": [
+    "Card declined on last invoice",
+    "Need a copy of invoice #2041",
+    "Can we pay by wire transfer?"
+  ],
+  "w": {
+    "active-users": {
+      "value": 21,
+      "deltaPct": 8,
+      "series": [
+        17,
+        18,
+        19,
+        19,
+        20,
+        21,
+        21
+      ]
+    },
+    "seats-used": {
+      "used": 24,
+      "total": 25
+    },
+    "open-tickets": {
+      "value": 3,
+      "deltaPct": 50
+    },
+    "uptime": {
+      "value": 99.97,
+      "incidents": 0
+    },
+    "usage-trend": {
+      "deltaPct": 9,
+      "series": [
+        60,
+        64.5,
+        61.1,
+        68.4,
+        69.4,
+        67.7,
+        76.4,
+        73.6,
+        75.6,
+        83.2,
+        78.1,
+        84.4,
+        88.5,
+        83.6
+      ]
+    },
+    "feature-adoption": {
+      "items": [
+        {
+          "label": "Dashboards",
+          "value": 92
+        },
+        {
+          "label": "Alerts",
+          "value": 55
+        },
+        {
+          "label": "API",
+          "value": 31
+        },
+        {
+          "label": "Exports",
+          "value": 64
+        }
+      ]
+    },
+    "billing": {
+      "plan": "Team",
+      "mrr": 1250,
+      "status": "overdue",
+      "invoices": [
+        {
+          "label": "#2041 \u00b7 Sep",
+          "amount": 1250,
+          "status": "failed"
+        },
+        {
+          "label": "#2040 \u00b7 Aug",
+          "amount": 1150,
+          "status": "paid"
+        },
+        {
+          "label": "#2039 \u00b7 Jul",
+          "amount": 1000,
+          "status": "paid"
+        }
+      ]
+    },
+    "seat-growth": {
+      "added30d": 6,
+      "series": [
+        12,
+        14,
+        16,
+        19,
+        22,
+        25
+      ]
+    },
+    "security-events": {
+      "total": 0,
+      "items": []
+    },
+    "api-errors": {
+      "ratePct": 0.4,
+      "series": [
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "response-time": {
+      "p95Ms": 240,
+      "series": [
+        235,
+        241.2,
+        229.8,
+        241.9,
+        240.2,
+        233.3,
+        247.3,
+        238.6,
+        239.1,
+        250.2,
+        237.9,
+        246.2
+      ]
+    },
+    "ticket-backlog": {
+      "oldestDays": 6,
+      "items": [
+        {
+          "label": "High",
+          "value": 1
+        },
+        {
+          "label": "Normal",
+          "value": 2
+        },
+        {
+          "label": "Low",
+          "value": 0
+        }
+      ]
+    },
+    "nps-score": {
+      "value": 52,
+      "deltaPts": 2,
+      "promoters": 14,
+      "detractors": 3
+    },
+    "onboarding-progress": {
+      "done": 6,
+      "total": 6,
+      "steps": []
+    },
+    "alert-churn-risk": {
+      "detail": "Usage is growing."
+    },
+    "alert-security-breach": {
+      "detail": "No signs of unusual access."
+    },
+    "alert-payment-failed": {
+      "detail": "Last invoice (#2041) failed 6 days ago. Service may be limited in 8 days."
+    },
+    "suggest-upgrade": {
+      "detail": "At 24 of 25 seats, Enterprise adds volume pricing and SSO."
+    },
+    "suggest-enable-sso": {
+      "detail": "With 25 people, SSO reduces password resets."
+    },
+    "suggest-invite-team": {
+      "detail": "Not needed: onboarding complete."
+    }
+  },
+  "events": [
+    "Payment of invoice #2041 failed 6 days ago; the account becomes limited in 8 days",
+    "Seats grew from 12 to 25 in six months",
+    "Asked support about paying by wire transfer"
+  ]
+}

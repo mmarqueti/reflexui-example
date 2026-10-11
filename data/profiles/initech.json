@@ -1,0 +1,249 @@
+{
+  "id": "initech",
+  "name": "Carla Mendes",
+  "role": "Head of Security, Initech",
+  "avatar": "CM",
+  "story": "Enterprise, 400 seats, SSO on. Failed logins spiked 4x from a new region and she searched the audit log yesterday.",
+  "ctx": {
+    "workspaceId": "ws_initech",
+    "plan": "enterprise",
+    "seats": 400,
+    "hasSso": true
+  },
+  "areas": {
+    "security": {
+      "anomaly": 4.1,
+      "visits": 14,
+      "tickets": 1
+    },
+    "usage": {
+      "anomaly": 1,
+      "visits": 2,
+      "tickets": 0
+    },
+    "billing": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "onboarding": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "reliability": {
+      "anomaly": 1.1,
+      "visits": 1,
+      "tickets": 0
+    },
+    "support": {
+      "anomaly": 1,
+      "visits": 1,
+      "tickets": 1
+    },
+    "feedback": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    }
+  },
+  "topics": [
+    "Unknown IP range logging in as service accounts"
+  ],
+  "w": {
+    "active-users": {
+      "value": 352,
+      "deltaPct": 1,
+      "series": [
+        345,
+        350,
+        349,
+        351,
+        352,
+        350,
+        352
+      ]
+    },
+    "seats-used": {
+      "used": 371,
+      "total": 400
+    },
+    "open-tickets": {
+      "value": 1,
+      "deltaPct": 0
+    },
+    "uptime": {
+      "value": 99.99,
+      "incidents": 0
+    },
+    "usage-trend": {
+      "deltaPct": 2,
+      "series": [
+        900,
+        928.8,
+        867.9,
+        926.7,
+        915.8,
+        877.8,
+        945.9,
+        899.5,
+        899.5,
+        952.6,
+        888.1,
+        927.3,
+        946.1,
+        888.1
+      ]
+    },
+    "feature-adoption": {
+      "items": [
+        {
+          "label": "Dashboards",
+          "value": 88
+        },
+        {
+          "label": "Alerts",
+          "value": 74
+        },
+        {
+          "label": "API",
+          "value": 81
+        },
+        {
+          "label": "Exports",
+          "value": 47
+        }
+      ]
+    },
+    "billing": {
+      "plan": "Enterprise",
+      "mrr": 18400,
+      "status": "paid",
+      "invoices": [
+        {
+          "label": "#9102 \u00b7 Sep",
+          "amount": 18400,
+          "status": "paid"
+        },
+        {
+          "label": "#9101 \u00b7 Aug",
+          "amount": 18400,
+          "status": "paid"
+        }
+      ]
+    },
+    "seat-growth": {
+      "added30d": 9,
+      "series": [
+        350,
+        355,
+        360,
+        364,
+        368,
+        371
+      ]
+    },
+    "security-events": {
+      "total": 1873,
+      "items": [
+        {
+          "label": "Failed logins (24h)",
+          "value": 1620
+        },
+        {
+          "label": "New devices",
+          "value": 214
+        },
+        {
+          "label": "Token revocations",
+          "value": 39
+        }
+      ]
+    },
+    "api-errors": {
+      "ratePct": 0.3,
+      "series": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.4,
+        0.3,
+        0.4
+      ]
+    },
+    "response-time": {
+      "p95Ms": 210,
+      "series": [
+        205,
+        210.5,
+        200.7,
+        211.3,
+        210,
+        204,
+        216.4,
+        208.9,
+        209.5,
+        219.3,
+        208.7,
+        216.1
+      ]
+    },
+    "ticket-backlog": {
+      "oldestDays": 2,
+      "items": [
+        {
+          "label": "High",
+          "value": 1
+        },
+        {
+          "label": "Normal",
+          "value": 0
+        },
+        {
+          "label": "Low",
+          "value": 0
+        }
+      ]
+    },
+    "nps-score": {
+      "value": 61,
+      "deltaPts": 1,
+      "promoters": 120,
+      "detractors": 20
+    },
+    "onboarding-progress": {
+      "done": 6,
+      "total": 6,
+      "steps": []
+    },
+    "alert-churn-risk": {
+      "detail": "Usage stable."
+    },
+    "alert-security-breach": {
+      "detail": "Failed logins 4.1x the 28-day average, mostly from one new region."
+    },
+    "alert-payment-failed": {
+      "detail": "All invoices paid."
+    },
+    "suggest-upgrade": {
+      "detail": "Already on the highest plan."
+    },
+    "suggest-enable-sso": {
+      "detail": "SSO is already enabled."
+    },
+    "suggest-invite-team": {
+      "detail": "Not needed: onboarding complete."
+    }
+  },
+  "events": [
+    "Failed logins are 4.1x the 28-day average, mostly from one new region",
+    "Service-account logins from an unknown IP range",
+    "The admin searched the audit log yesterday"
+  ]
+}

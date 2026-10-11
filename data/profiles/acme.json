@@ -1,0 +1,251 @@
+{
+  "id": "acme",
+  "name": "Ana Souza",
+  "role": "Founder, Acme Startup",
+  "avatar": "AS",
+  "story": "Free plan, 4 seats, just signed up. Still setting things up.",
+  "ctx": {
+    "workspaceId": "ws_acme",
+    "plan": "free",
+    "seats": 4,
+    "hasSso": false
+  },
+  "areas": {
+    "onboarding": {
+      "anomaly": 1,
+      "visits": 9,
+      "tickets": 2
+    },
+    "usage": {
+      "anomaly": 1.1,
+      "visits": 3,
+      "tickets": 0
+    },
+    "billing": {
+      "anomaly": 1,
+      "visits": 1,
+      "tickets": 0
+    },
+    "security": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "reliability": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    },
+    "support": {
+      "anomaly": 1,
+      "visits": 1,
+      "tickets": 2
+    },
+    "feedback": {
+      "anomaly": 1,
+      "visits": 0,
+      "tickets": 0
+    }
+  },
+  "topics": [
+    "How do I invite my team?",
+    "Where do I connect my data?"
+  ],
+  "w": {
+    "active-users": {
+      "value": 3,
+      "deltaPct": 50,
+      "series": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    "seats-used": {
+      "used": 3,
+      "total": 4
+    },
+    "open-tickets": {
+      "value": 2,
+      "deltaPct": 100
+    },
+    "uptime": {
+      "value": 99.99,
+      "incidents": 0
+    },
+    "usage-trend": {
+      "deltaPct": 12,
+      "series": [
+        5,
+        6.4,
+        6.3,
+        8.5,
+        9.2,
+        9.1,
+        12,
+        11.5,
+        12.4,
+        15.3,
+        13.7,
+        16.3,
+        18.1,
+        16.2
+      ]
+    },
+    "feature-adoption": {
+      "items": [
+        {
+          "label": "Dashboards",
+          "value": 70
+        },
+        {
+          "label": "Alerts",
+          "value": 10
+        },
+        {
+          "label": "API",
+          "value": 0
+        },
+        {
+          "label": "Exports",
+          "value": 20
+        }
+      ]
+    },
+    "billing": {
+      "plan": "Free",
+      "mrr": 0,
+      "status": "paid",
+      "invoices": []
+    },
+    "seat-growth": {
+      "added30d": 1,
+      "series": [
+        2,
+        2,
+        3,
+        3,
+        4,
+        4
+      ]
+    },
+    "security-events": {
+      "total": 0,
+      "items": []
+    },
+    "api-errors": {
+      "ratePct": 0.1,
+      "series": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "response-time": {
+      "p95Ms": 180,
+      "series": [
+        180,
+        184.5,
+        175.5,
+        184.5,
+        183,
+        177.5,
+        187.9,
+        181.1,
+        181.2,
+        189.4,
+        179.9,
+        185.9
+      ]
+    },
+    "ticket-backlog": {
+      "oldestDays": 1,
+      "items": [
+        {
+          "label": "High",
+          "value": 0
+        },
+        {
+          "label": "Normal",
+          "value": 2
+        },
+        {
+          "label": "Low",
+          "value": 0
+        }
+      ]
+    },
+    "nps-score": {
+      "value": 40,
+      "deltaPts": 0,
+      "promoters": 3,
+      "detractors": 1
+    },
+    "onboarding-progress": {
+      "done": 2,
+      "total": 6,
+      "steps": [
+        {
+          "label": "Create workspace",
+          "done": true
+        },
+        {
+          "label": "Connect data",
+          "done": true
+        },
+        {
+          "label": "Invite team",
+          "done": false
+        },
+        {
+          "label": "Build first dashboard",
+          "done": false
+        },
+        {
+          "label": "Set up an alert",
+          "done": false
+        },
+        {
+          "label": "Create API key",
+          "done": false
+        }
+      ]
+    },
+    "alert-churn-risk": {
+      "detail": "Low activity after week one."
+    },
+    "alert-security-breach": {
+      "detail": "No signs of unusual access."
+    },
+    "alert-payment-failed": {
+      "detail": "Not applicable on the free plan."
+    },
+    "suggest-upgrade": {
+      "detail": "Unlock alerts and the API with the Team plan."
+    },
+    "suggest-enable-sso": {
+      "detail": "Single sign-on is available on Enterprise."
+    },
+    "suggest-invite-team": {
+      "detail": "Only 3 of 4 seats are in use; invite a teammate."
+    }
+  },
+  "events": [
+    "Workspace created 6 days ago",
+    "2 of 6 onboarding steps are done",
+    "Asked support how to invite teammates"
+  ]
+}

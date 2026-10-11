@@ -1,0 +1,8 @@
+{
+  "_note": "Demo labels written by hand for the 5 mocked people. NOT a real calibration set: use dozens of cases labeled by someone who knows the domain.",
+  "acme": ["onboarding-progress", "usage-trend", "feature-adoption"],
+  "globex": ["alert-payment-failed", "billing", "seat-growth"],
+  "initech": ["alert-security-breach", "security-events", "ticket-backlog"],
+  "umbrella": ["api-errors", "response-time", "ticket-backlog"],
+  "hooli": ["alert-churn-risk", "usage-trend", "nps-score"]
+}
