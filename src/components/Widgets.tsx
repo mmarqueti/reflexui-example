@@ -9,14 +9,20 @@ function Delta({ pct, invert = false }: { pct: number; invert?: boolean }) {
   return <span className={`delta ${good ? "good" : "bad"}`}>{pct > 0 ? "▲" : pct < 0 ? "▼" : "•"} {Math.abs(pct)}%</span>;
 }
 
-function Spark({ data, color = "var(--accent)" }: { data: number[]; color?: string }) {
+/** Rounded gradient bars, oldest to newest. The latest one is highlighted in orange. */
+function Spark({ data }: { data: number[] }) {
   if (!data?.length) return null;
-  const w = 220, h = 48, min = Math.min(...data), max = Math.max(...data);
-  const pts = data.map((v, i) => `${(i / (data.length - 1)) * w},${h - 4 - ((v - min) / (max - min || 1)) * (h - 8)}`);
+  const min = Math.min(...data), max = Math.max(...data);
   return (
-    <svg viewBox={`0 0 ${w} ${h}`} className="spark" preserveAspectRatio="none" aria-hidden>
-      <polyline points={pts.join(" ")} fill="none" stroke={color} strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
-    </svg>
+    <div className="spark" aria-hidden>
+      {data.map((v, i) => (
+        <i
+          key={i}
+          className={i === data.length - 1 ? "peak" : undefined}
+          style={{ height: `${22 + 78 * ((v - min) / (max - min || 1))}%`, opacity: 0.55 + 0.45 * (i / Math.max(data.length - 1, 1)) }}
+        />
+      ))}
+    </div>
   );
 }
 
@@ -25,7 +31,7 @@ function Bars({ items, unit = "%" }: { items: { label: string; value: number }[]
   return (
     <div className="bars">
       {items.map((i) => (
-        <div key={i.label} className="bar-row">
+        <div key={i.label} className={`bar-row${i.value === max && max > 0 ? " peak" : ""}`}>
           <span>{i.label}</span>
           <div className="bar"><i style={{ width: `${unit === "%" ? i.value : (i.value / max) * 100}%` }} /></div>
           <b>{fmt(i.value)}{unit === "%" ? "%" : ""}</b>
@@ -79,8 +85,8 @@ export const widgets: Record<string, (d: any) => ReactNode> = {
       <Bars unit="" items={d.items.length ? d.items : [{ label: "Nothing unusual", value: 0 }]} />
     </div>
   ),
-  "api-errors": (d) => <Big value={`${d.ratePct}%`} sub={<span className="muted">5xx rate</span>}><Spark data={d.series} color="var(--bad)" /></Big>,
-  "response-time": (d) => <Big value={`${fmt(d.p95Ms)} ms`} sub={<span className="muted">p95</span>}><Spark data={d.series} color="var(--warn)" /></Big>,
+  "api-errors": (d) => <Big value={`${d.ratePct}%`} sub={<span className="muted">5xx rate</span>}><Spark data={d.series} /></Big>,
+  "response-time": (d) => <Big value={`${fmt(d.p95Ms)} ms`} sub={<span className="muted">p95</span>}><Spark data={d.series} /></Big>,
   "ticket-backlog": (d) => (
     <div>
       <div className="muted">Oldest open: {d.oldestDays} day(s)</div>
